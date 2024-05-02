@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Algorithms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Default background color */
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .algorithm {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9; /* Professional background color */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            text-align: center; /* Center content */
+        }
+        .algorithm:hover {
+            background-color: #e0e0e0; /* Hover background color */
+        }
+        .algorithm h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .predict-button {
+            display: inline-block; /* Adjust display property */
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .predict-button:hover {
+            background-color: #0056b3; /* Hover background color */
+        }
+    </style>
+</head>
+<body style="background-color: #f4f4f4;">
+    <div class="container">
+        <h1>Choose a Machine Learning Algorithm</h1>
+        
+        <div class="algorithm">
+            <h2>Linear Regression</h2>
+            <button class="predict-button" onclick="navigateToPredictionPage('linear.html')">Let's Predict</button>
+        </div>
+
+        <div class="algorithm">
+            <h2>Logistic Regression</h2>
+            <button class="predict-button" onclick="navigateToPredictionPage('logistic.html')">Let's Predict</button>
+        </div>
+
+        <div class="algorithm">
+            <h2>K-Nearest Neighbors (KNN)</h2>
+            <button class="predict-button" onclick="navigateToPredictionPage('knn.html')">Let's Predict</button>
+        </div>
+
+        <div class="algorithm">
+            <h2>Decision Trees</h2>
+            <button class="predict-button" onclick="navigateToPredictionPage('d_tree.html')">Let's Predict</button>
+        </div>
+    </div>
+
+    <script>
+        function navigateToPredictionPage(algorithm) {
+            window.location.href = algorithm;
+        }
+    </script>
+</body>
+</html>
