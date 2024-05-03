@@ -8,12 +8,24 @@ from sklearn.neighbors import KNeighborsClassifier
 
 
 
+
 def home(request):
     return render(request, 'home.html')
 
-def predict(request):
-    return render(request,'predict.html')
+def first(request):
+    return render(request,'first.html')
 
+def random(request):
+    return render(request,'random.html')
+
+def logistic(request):
+    return render(request,'logistic.html')
+
+def knn(request):
+    return render(request,'knn.html')
+
+def tree(request):
+    return render(request,'tree.html')
 
 def result(request):
     dataset = pd.read_csv(r'C:\Users\santo\Downloads\Compressed\Cardiovascular-Disease-Prediction-System-main\Cardiovascular-Disease-Prediction-System-main\SP4\home\templates\cardio_train.csv',sep = ";")
@@ -47,4 +59,4 @@ def result(request):
     else:
         result1 = "Negative"
 
-    return render(request,'predict.html',{"result2": result1})
+    return render(request,'linear.html',{"result2": result1})
